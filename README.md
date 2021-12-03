@@ -4,7 +4,7 @@ Responsive Restaurant Website using React, CSS (with Vite).
 
 ## Demo
 
-https://tasty-foodd.netlify.app/
+https://tasty-foodd-restaurant.netlify.app/
 
 ## Run
 
