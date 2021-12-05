@@ -7,7 +7,7 @@ import Contact from './sections/Contact';
 
 function Main() {
   return (
-    <main>
+    <main className="main">
       <Home />
       <About />
       <Services />

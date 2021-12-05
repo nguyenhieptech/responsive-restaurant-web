@@ -19,3 +19,7 @@
   z-index: var(--z-fixed);
   background-color: var(--body-color);
 }
+
+.main {
+  margin-top: var(--header-height);
+}
