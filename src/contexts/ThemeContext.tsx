@@ -37,7 +37,7 @@ function ThemeContextProvider({ children }: ContextProps) {
   // Set default light theme
   useEffect(() => {
     if (!theme) {
-      localStorage.setItem('theme', lightTheme);
+      localStorage.setItem('theme', darkTheme);
     }
   }, [theme]);
 

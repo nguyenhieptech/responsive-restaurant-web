@@ -1,13 +1,12 @@
-import React from 'react';
 import { Link } from 'react-scroll';
 import home from '../../img/home.png';
 import ScrollRevealAnimation from '../../ScrollRevealAnimation';
 
 function Home() {
   return (
-    <section className="home" id="home">
-      <div className="home__container container d-grid">
-        <ScrollRevealAnimation timing="0.7">
+    <ScrollRevealAnimation timing="1">
+      <section className="home" id="home">
+        <div className="home__container container d-grid">
           <div className="home__data">
             <h1 className="home__title">Tasty Food</h1>
             <h2 className="home__subtitle">
@@ -18,10 +17,10 @@ function Home() {
               View Menu
             </Link>
           </div>
-        </ScrollRevealAnimation>
-        <img src={home} alt="" className="home__img" />
-      </div>
-    </section>
+          <img src={home} alt="" className="home__img" />
+        </div>
+      </section>
+    </ScrollRevealAnimation>
   );
 }
 

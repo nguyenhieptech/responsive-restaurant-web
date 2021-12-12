@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
 
-// This hook returns window.scrollY
+/**
+ * This hook returns window.scrollY
+ * @return window.scrollY
+ */
 
-function useScrollY() {
+export function useScrollY() {
   const [windowScrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -15,7 +18,5 @@ function useScrollY() {
   }, []); // Empty array ensures that effect is only run on mount
   return windowScrollY;
 }
-
-export default useScrollY;
 
 // Learn more here: https://usehooks.com/useWindowSize/

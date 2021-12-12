@@ -1,13 +1,12 @@
-import React from 'react';
 import { Link } from 'react-scroll';
 import ScrollRevealAnimation from '../../ScrollRevealAnimation';
 
 function Contact() {
   return (
-    <section className="contact section container" id="contact">
-      <div className="contact__container d-grid">
-        <div className="contact__data">
-          <ScrollRevealAnimation timing="0.5">
+    <ScrollRevealAnimation>
+      <section className="contact section container" id="contact">
+        <div className="contact__container d-grid">
+          <div className="contact__data">
             <span className="section-subtitle contact__initial">
               Let's talk
             </span>
@@ -16,15 +15,15 @@ function Contact() {
               If you want to reserve a table in our restaurant, contact us and
               we will attend you quickly, with our 24/7 chat service.
             </p>
-          </ScrollRevealAnimation>
+          </div>
+          <div className="contact__button">
+            <Link to="" className="button">
+              Contact us now
+            </Link>
+          </div>
         </div>
-        <div className="contact__button">
-          <Link to="" className="button">
-            Contact us now
-          </Link>
-        </div>
-      </div>
-    </section>
+      </section>
+    </ScrollRevealAnimation>
   );
 }
 

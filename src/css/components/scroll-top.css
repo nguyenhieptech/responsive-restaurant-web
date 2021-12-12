@@ -16,6 +16,7 @@
 
 .scrolltop:hover {
   background-color: var(--first-color-alt);
+  cursor: pointer;
 }
 
 .scrolltop__icon {

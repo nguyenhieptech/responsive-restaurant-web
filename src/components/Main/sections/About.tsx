@@ -1,13 +1,12 @@
-import React from 'react';
 import { Link } from 'react-scroll';
 import about from '../../img/about.jpg';
 import ScrollRevealAnimation from '../../ScrollRevealAnimation';
 
 function About() {
   return (
-    <section className="about section container" id="about">
-      <div className="about__container d-grid">
-        <ScrollRevealAnimation timing="0.6">
+    <ScrollRevealAnimation>
+      <section className="about section container" id="about">
+        <div className="about__container d-grid">
           <div className="about__data">
             <span className="section-subtitle about__initial">About us</span>
             <h2 className="section-title about__initial">
@@ -22,10 +21,10 @@ function About() {
               Explore history
             </Link>
           </div>
-        </ScrollRevealAnimation>
-        <img src={about} alt="" className="about__img" />
-      </div>
-    </section>
+          <img src={about} alt="" className="about__img" />
+        </div>
+      </section>
+    </ScrollRevealAnimation>
   );
 }
 

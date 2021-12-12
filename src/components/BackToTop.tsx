@@ -1,5 +1,5 @@
 import { Link } from 'react-scroll';
-import useScrollY from '../hooks/useScrollY';
+import { useScrollY } from '../hooks/useScrollY';
 
 function BackToTop() {
   const windowScrollY = useScrollY();
